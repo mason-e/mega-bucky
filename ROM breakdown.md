@@ -28,7 +28,7 @@ EF90 to 10110 (between tiles and scripts)
 Escape tiles
 
 ### 8090 to 8740
-Green Planet tiles. Might actually start around 8210, some of the hex value groupings are very similar
+Green Planet tiles
 
 ### 9250 to 96A0
 Red Planet tiles

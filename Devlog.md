@@ -122,3 +122,15 @@ Another day without any big "milestone" progress, but I am furthering my learnin
 
 Revisiting something from yesterday, I tracked down where the title screen logo palette is set. It turns out that was a single byte, and if I change the byte value I can get various results. This does concern me a bit that I might not have as much palette control as I need, but I don't fully understand how this works yet. As seen in the screenshot below, sometimes the palette setting can also screw up the positioning of the text.
 ![game screen](./devlog-screens/log-7-6/1.PNG)
+
+## 7 Jul 2024
+
+Today I went back to replacing tiles in the Green Planet's first act. I chose tiles from Hard Man's stage in MM3. This is an example of how I'm concerned about palette control, as this is what it looks like when I try to change to the palette from MM3:
+![game screen](./devlog-screens/log-7-7/1.PNG)
+
+Those blocks are there from the original graphics where the platforms went down in a V shape. But with the game's original palette then I get too much purple where I don't want it:
+![game screen](./devlog-screens/log-7-7/2.PNG)
+
+## 8 Jul 2024, 13-14 Jul 2024
+
+Identified the pattern tables for the whole game, which are detailed in their own document.
