@@ -8,13 +8,13 @@ Start of development! This was a productive day with some "easy wins".
 
 Replaced text chars from mostly Mega Man 2, some additional punctuation from Mega Man 4. Here is what it looks like before and after the change:
 
-![img](./screens-01/1.png)
-![img](./screens-01/2.png)
+![img](./screens-01/1.PNG)
+![img](./screens-01/2.PNG)
 
 I also made the life/power meters mor "Mega Man"ish. Instead of changing color to indicate fullness, I wanted it to deplete completely. There is one issue with that: In MM, the meters usually have a black outline and black spaces in between, which works because they're rarely put over a black background. But that's not the case in Bucky. One option would've been to give them a fourth color outline, but then it's not possible to give an overall outer vertical boundary - only lines between that would end up showing each "chunk" of the meter. I ended up doing something a bit inexact and having the depleted bars shrink a bit. Original game vs update:
 
-![img](./screens-01/3.png)
-![img](./screens-01/4.png)
+![img](./screens-01/3.PNG)
+![img](./screens-01/4.PNG)
 
 ## 8 Jun 2024
 
@@ -24,8 +24,8 @@ The rest of my efforts were mostly spent poring through the Mesen debugging docu
 
 This is not a permanent change, but an example showing I found how to change the colors. Our heroes in Bucky get a remake in the image of our favorite Blue Bomber. Unfortunately it doesn't work very well. Aside from the color distribution being off, I saw most of the characters' bullets took on the new color as well. The base palettes of the sprites could certainly be changed to make it look better (i.e. Willy and Jenny's shoulders, Deadeye's hat), but I'm not so sure about the bullets being as simple.
 
-![img](./screens-01/5.png)  
-![img](./screens-01/6.png) ![img](./screens-01/7.png) ![img](./screens-01/8.png) ![img](./screens-01/9.png)
+![img](./screens-01/5.PNG)  
+![img](./screens-01/6.PNG) ![img](./screens-01/7.PNG) ![img](./screens-01/8.PNG) ![img](./screens-01/9.PNG)
 
 ## 9 Jun 2024
 
@@ -37,17 +37,17 @@ I also pulled the equivalent sprites from Mega Man and replaced the 1UP, Power a
 
 I figured out how to edit the game's script. I'm not sure I'll make this a permanent change since I might change the text altogether, but as practice I fixed the "FLYS" typo at the end of the game:
 
-![img](./screens-01/10.png)
+![img](./screens-01/10.PNG)
 
 This was not actually as easy it might seem, because there wasn't actually any additional room on that line in the game's ROM. There might be multiple ways to handle that scenario, but what I ended up doing was realizing in the prior screen that "MOTHER SHIP" could be fixed. Thus by removing the space, it freed up room for me to a character, which I accomplished by moving everything back a byte after "MOTHER".
 
-![img](./screens-01/11.png)
+![img](./screens-01/11.PNG)
 
 ## 15 Jun 2024
 
 It isn't much, but I made my first attempt at replacing tiles with something from MM. In this screen, I used assets from Blizzard Man's stage (MM6) with slight alterations.  
 
-![img](./screens-01/12.png)
+![img](./screens-01/12.PNG)
 
 There is still a lot of work that could be done here, such as changing the sky, or making these look like stacks of blocks rather than being continuous.
 
@@ -55,7 +55,7 @@ There is still a lot of work that could be done here, such as changing the sky, 
 
 Added an underwater ice block to match the above surface ones.  
 
-![img](./screens-01/13.png)
+![img](./screens-01/13.PNG)
 
 ## 4 Jul 2024
 
@@ -63,12 +63,12 @@ Something I realized is that all Mega Man games have a "square" terrain aestheti
 
 I started out by identifying tiles that are, for example, part of the "taper off" of these cliffs. I replaced them with "G1" in this case (Green Planet Act 1). There will be more, but I'm not going to take screenshots of this going forward, this is just a little demonstration:  
 
-![img](./screens-01/14.png)
+![img](./screens-01/14.PNG)
 
 My reason for doing this is that these tiles won't be displayed once I fix the terrain to be more square. But in case I need the tile space later on for some other graphics, I didn't want to leave them as-is in ROM, so I changed them to something that will be much easier to find in TLP.
 
 Here's an example of a more squared off Green Planet Act 1, for now I'm going to leave the floating cliffs like that until I replace the graphics with MM ones. I thought this blue/white corner was a bug, but the original palette was like this, so I need to figure out how to change its palette.  
-![img](./screens-01/15.png)
+![img](./screens-01/15.PNG)
 
 ## 5 Jul 2024
 
@@ -76,13 +76,13 @@ Today I changed gears and tried to figure out the score. I did find where the sc
 
 I have a hypothesis that the 50000 (dec) high score value is actually stored as an $05 value somewhere. I wanted to see how often $05s are read from ROM to load in this score, and assume it's either at boot up or start of a level. The value $05 is also used for the letter E in text, so I tried clearing out the game's copyright and title screen text. These aren't exactly how I meant to change them but these are the results:
 
-![img](./screens-01/16.png)  
-![img](./screens-01/17.png)
+![img](./screens-01/16.PNG)  
+![img](./screens-01/17.PNG)
 
 The second screen is notable because I accidentally corrupted the game logo's palette, so I might be able to revisit this to glean how to select palettes.
 
 A more definitive change is one I made in the bottom bar. These letters are nonsense, it was more just for the sake of making sure I could do it - but I kept the change since I have plans for a bigger overhaul here anyway.
-![img](./screens-01/18.png)
+![img](./screens-01/18.PNG)
 
 ## 6 Jul 2024
 
@@ -90,17 +90,17 @@ Another day without any big "milestone" progress, but I am furthering my learnin
 
 Revisiting something from yesterday, I tracked down where the title screen logo palette is set. It turns out that was a single byte, and if I change the byte value I can get various results. This does concern me a bit that I might not have as much palette control as I need, but I don't fully understand how this works yet. As seen in the screenshot below, sometimes the palette setting can also screw up the positioning of the text.
 
-![img](./screens-01/19.png)
+![img](./screens-01/19.PNG)
 
 ## 7 Jul 2024
 
 Today I went back to replacing tiles in the Green Planet's first act. I chose tiles from Hard Man's stage in MM3. This is an example of how I'm concerned about palette control, as this is what it looks like when I try to change to the palette from MM3:
 
-![img](./screens-01/20.png)
+![img](./screens-01/20.PNG)
 
 Those blocks are there from the original graphics where the platforms went down in a V shape. But with the game's original palette then I get too much purple where I don't want it:
 
-![img](./screens-01/21.png)
+![img](./screens-01/21.PNG)
 
 ## 8 Jul 2024, 13-14 Jul 2024
 
@@ -110,26 +110,26 @@ Identified the pattern tables for the whole game, which are detailed in their ow
 
 I made a little change to the Green Planet clouds, just looking for some simple bit of progress I could make. I made them a single color since that's a common look in MM, but then I wasn't satisfied with the sky color. I messed around with that a bit but I'll probably change it again later on.
 
-![img](./screens-01/22.png)
+![img](./screens-01/22.PNG)
 
 Then I decided to corrupt a part of the ROM, which is basically giving it a bunch of bad bytes and seeing how it is affected. This helped me identify some of the level data in the region I corrupted. It produces a result like this:
 
-![img](./screens-01/23.png)
+![img](./screens-01/23.PNG)
 
 ### 15 Jul 2024
 
 More data corrupting, mostly in areas I suspect are _not_ level data. It produces a ton of interesting results (and crashes), but here is just a small sample. Some of them aren't really possible to capture in a single screenshot either, such as the way the screen jitters all over the place in some corruptions.
 
-![img](./screens-01/24.png)  
-![img](./screens-01/25.png)  
-![img](./screens-01/26.png)  
+![img](./screens-01/24.PNG)  
+![img](./screens-01/25.PNG)  
+![img](./screens-01/26.PNG)  
 
 ### 16 Jul 2024
 
 Continued data corruption. This has been a bit tedious, and now that I've started to get into actual game logic, I'm not sure if there is as much value since that probably can't be edited directly in the ROM (as opposed to assembly code). Nonetheless, I hope it is useful in the long run to have an idea of how the ROM is sectioned out. And I had some fun seeing bugs, though these screenshots don't really capture the best ones.
 
-![img](./screens-01/27.png)  
-![img](./screens-01/28.png) 
+![img](./screens-01/27.PNG)  
+![img](./screens-01/28.PNG) 
 
 To this point I think I've generally located all the level tile data, but still need to parse out what it all means. I _might_ also have the sprites for each level, but it's even more confusing to parse. The one remaining thing I hope I can find through corruption is the sounds and music, if it'll be possible to get them to not play without otherwise breaking the game.
 
@@ -143,18 +143,18 @@ Figured out how to change the colors on metatile groupings (the 4x4 tile or 16x1
 
 Here is an example of me creating a pattern of palettes 0, 1, 2 and 3 from left to right, top to bottom (or 1, 2, 3, 4 if you prefer, though they are 0-indexed in the software):
 
-![img](./screens-01/29.png)
+![img](./screens-01/29.PNG)
 
 ## 21 Jul 2024
 
 I made some progress towards understanding the above point on why specific tile groups are affected by the color change, but I need to put it into action. Relating to this, I also realized that rather than changing the metatile _definitions_ to suit my needs, I should change which metatiles are _selected_, which I now know how to do. Given that, I went back and undid some of my previous changes to try to square off the floating cliffs:
 
-![img](./screens-01/30.png)
+![img](./screens-01/30.PNG)
 
 I of course haven't yet fixed the above. But I did try on a simpler tileset to prove it out, removing some clouds for now (before and after):
 
-![img](./screens-01/31.png)  
-![img](./screens-01/32.png)
+![img](./screens-01/31.PNG)  
+![img](./screens-01/32.PNG)
 
 ## 22 Jul 2024 
 
