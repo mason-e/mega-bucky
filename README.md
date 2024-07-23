@@ -2,4 +2,4 @@
 
 Mega Bucky is the title of my ROMhack of the 1992 NES game Bucky O'Hare. Bucky O'Hare is often regarded as Konami's take on Capcom's much more popular and prolific Mega Man series (which has a staggering 6 releases on the NES alone). As one might guess, the goal of this hack is to incorporate elements from the better-known series. I won't detail what those are here, as there are other documents in this repo for that... and it's still in a very WIP state. Being WIP, there are also no patches available yet. Stay tuned for updates to this README!
 
-What _can_ be found here is a [Devlog](./Devlog.md) that contains info on changes (and struggles) as they are made. I also have some documents breaking down findings in more detail, more so for my own reference, but many of them are committed here as well.
+What _can_ be found here are [Devlogs](./devlogs/devlog-1.md) that contain info on changes (and struggles) as they are made. I also have some documents breaking down findings in more detail, more so for my own reference, but many of them are committed here as well.
