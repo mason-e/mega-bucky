@@ -4,9 +4,9 @@ This file is for tracking "regions" of the PRG ROM as I determine them. This inf
 
 ## Undetermined Ranges
 0000 to 3100 (first part of ROM)  
-32A0 to 8090 (appears between tiles, but larger range than others)  
-8740 to 9250 (between tiles)  
-96A0 to A2B0 (between tiles)  
+32A0 to 8010 (appears between tiles, but larger range than others)  
+8740 to 9100 (between tiles)  
+96A0 to A200 (between tiles)  
 A6C0 to AED0 (between tiles)  
 AF50 to C0B0 (between tiles)  
 C9D0 to D2F0 (between tiles)  
@@ -27,13 +27,13 @@ EF90 to 10110 (between tiles and scripts)
 ### 3100 to 32A0
 Escape tiles
 
-### 8090 to 8740
+### 8010 to 8740
 Green Planet tiles
 
-### 9250 to 96A0
+### 9150 to 96A0
 Red Planet tiles
 
-### A2B0 to A6C0
+### A200 to A6C0
 Blue Planet tiles
 
 ### AED0 to AF50
@@ -63,8 +63,8 @@ Status bar script (and logic?)
 ### 11510 to 11590
 Stage name script
 
-### 11AXX to 11BXX
-Palettes. I marked this more inexactly since I only checked a few palettes from around the beginning and end of the game.
+### 11680 to 11C60
+Palettes
 
 ### 11C40 to 11D70 
 End credits script

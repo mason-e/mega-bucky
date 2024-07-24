@@ -156,6 +156,12 @@ I of course haven't yet fixed the above. But I did try on a simpler tileset to p
 ![img](./screens-01/31.PNG)  
 ![img](./screens-01/32.PNG)
 
-## 22 Jul 2024 
+## 22-23 Jul 2024 
 
 Cleaning up the documentation and ironing out some of my understanding of the above concepts through hex edits. There are no definitive changes to show, as my focus for now is getting my knowledge base into a good state.
+
+## Conclusion
+
+With this, I've decided to end this devlog, but there will be another one when work resumes. In about a month and a half on this project, I learned a decent amount about level editing (and a few other things), and documented it down for myself to be able to pick up later. I intend to slow my development for now, if not go on hiatus outright. This project is time-consuming, and makes more sense to spend more time with in the colder months.
+
+Progress wise, the change of the game's font was my most visible change, but this early stage of development is front-loaded with learning. There is still a lot more I will need to learn to realize my vision, but I'm happy to be at a point where I can theoretically make most of my level edits and just need to put that skill into practice.
