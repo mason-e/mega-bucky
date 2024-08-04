@@ -17,6 +17,7 @@ Appears to be level data for Green Planet. I went and broke it in smaller chunks
 8F00 to 9000: Pretty large Act 3 break  
 9000 to 9100: Pretty large Act 4 and 5 break  
 9100 to 9250: Pretty large Act 6 break  
+8A80 to 8C00: Breaks the acts pretty badly. If I corrupt in smaller chunks, it goes in order of the acts. So it's some kind of code for level behavior.
 
 ### 96A0 to A200
 

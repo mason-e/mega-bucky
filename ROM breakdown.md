@@ -5,7 +5,7 @@ This file is for tracking "regions" of the PRG ROM as I determine them. This inf
 ## Undetermined Ranges
 0000 to 3100 (first part of ROM)  
 32A0 to 8010 (appears between tiles, but larger range than others)  
-8740 to 9100 (between tiles)  
+8740 to 8B10 (between tiles)  
 96A0 to A200 (between tiles)  
 A6C0 to AED0 (between tiles)  
 AF50 to C0B0 (between tiles)  
@@ -27,11 +27,23 @@ EF90 to 10110 (between tiles and scripts)
 ### 3100 to 32A0
 Escape tiles
 
-### 8010 to 8740
+### 8010 to 89B0
 Green Planet tiles
 
-### 9150 to 96A0
+### 89E0 to 8A70
+Green Planet tile attributes
+
+### 8A80 to 8B00
+Don't know, but it messes up the level bad if corrupted
+
+### 8B10 to 9187
+Green Planet level layout
+
+### 9188 to 96A0
 Red Planet tiles
+
+### 9789 to ???
+Red Planet metatiles
 
 ### A200 to A6C0
 Blue Planet tiles
