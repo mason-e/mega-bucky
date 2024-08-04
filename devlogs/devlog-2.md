@@ -35,3 +35,8 @@ Changed the waterfall texture and color in Green Planet. See below:
 ![img](./screens-02/11.PNG)
 
 A little bit of corruption and documentation reorganization today as well. Now I'm at a point where I have a lot of the technical know-how to edit level tiles, but choosing the right graphics is the hard part.
+
+After a break, I came back and revisited an old area - with better knowledge of how to configure the tiles, I was able to get most of the Blue Planet ice blocks looking how I wanted.
+![img](./screens-02/12.PNG)
+![img](./screens-02/13.PNG)
+![img](./screens-02/14.PNG)

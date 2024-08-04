@@ -3,7 +3,6 @@
 This details the ROM locations of metatile groupings for each level - in other words, the actual data that makes up the levels.
 
 ## Green Planet
-
 The 00 metatile starts at 8010.
 
 ### Act 1
@@ -29,8 +28,19 @@ The 00 metatile starts at 8010.
 These two sets overlap
 
 ## Red Planet
-
 The 00 metatile starts at 918A.
 
 ### Act 1
 9789 through 98D9 - uses parallax layers
+
+## Blue Planet
+The 00 metatile starts at A180.
+
+### Act 1
+A86E through ???
+
+### Act 8
+AC5F through ACBE
+
+### Act 9
+ACBF through AD4E
