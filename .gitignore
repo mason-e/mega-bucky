@@ -1,3 +1,8 @@
 *.nes
+*.ftm
+*.nsf
+*.chr
+*.dmp
+*.nam
 *.txt
 sprites

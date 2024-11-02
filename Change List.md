@@ -125,17 +125,23 @@ Notes for the following are much rougher for now.
 - Fairly nondescript boss, metal looking platforms from act 2
 
 #### Cell
-- Mostly square blocks with some bars
+- Cell Bars
+- Triple Guns
+    - They are 4x4 tiles, find a similar size in MM
 - Conveyor belts
-    - MM2 metal man
+    - MM2 metal man, MM10 sheep man
 - Elevators
+    - MM5 Gyro Man
+    - Each side of the elevator is one metatile wide/tall
 - Elevator spikes very similar to MM style "circular" spikes
+- Electro things
+    - MM3 spark man
 
 #### Salvage Chute
 - Green ground, colored pipes, exposed pipes
     - MM2 crash man "pipes"
 - Teal bricks and crushers
-    - MM1 cut man
+    - MM1 cut man - probably closet color
     - MM3 wily 1/4
     - MM4 Dust Man crushers
 - Weird red pile with bugs, more pipes
@@ -209,6 +215,8 @@ Notes for the following are much rougher for now.
 - MM sytle "freeze" screen during screen change
     - Hard to implement on its own, but also compounded by the fact many screens in Bucky transition to a completely different style of the level
 - Update unfair sections where possible. Needs more fleshing out
+    - Cell "Act 5" - conveyor belts on top left return you back to same spot
+    - Cell "Act 7" - top path at end takes you back to same spot
 
 ### Excess
 
@@ -230,3 +238,12 @@ Notes for the following are much rougher for now.
 
 #### Green Planet
 - Waterfall styled from MM3 Shadow Man and recolored blue
+
+#### Cell
+- Blocks from MM2 Wily 1 Dragon Boss
+- Conveyor belts from MM10 Sheep Man
+- Single-point spikes from MM4 Drill Man
+- Simplified look of star spikes
+
+#### Magma Tanker
+- Conveyor belts from MM10 Sheep Man

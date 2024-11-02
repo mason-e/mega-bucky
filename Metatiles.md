@@ -36,8 +36,20 @@ The 00 metatile starts at 918A.
 ## Blue Planet
 The 00 metatile starts at A180.
 
+Empty blue sky: 13
+Unneeded metatiles for now: 20, 11, 22, 01, 02
+
 ### Act 1
-A86E through ???
+A86F through A98E
+
+### Act 2-4
+A98F through A9EE. The screens are in reverse order, and repeat for each act
+
+### Act 5
+A9EF through AADE
+
+### Act 6
+AADF through
 
 ### Act 8
 AC5F through ACBE

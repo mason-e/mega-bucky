@@ -31,12 +31,65 @@ Also spent some more time trying to plan out more level changes and determine go
 ## 4 Aug 2024
 
 Changed the waterfall texture and color in Green Planet. See below:
+
 ![img](./screens-02/10.PNG) 
 ![img](./screens-02/11.PNG)
 
 A little bit of corruption and documentation reorganization today as well. Now I'm at a point where I have a lot of the technical know-how to edit level tiles, but choosing the right graphics is the hard part.
 
 After a break, I came back and revisited an old area - with better knowledge of how to configure the tiles, I was able to get most of the Blue Planet ice blocks looking how I wanted.
+
 ![img](./screens-02/12.PNG)
 ![img](./screens-02/13.PNG)
 ![img](./screens-02/14.PNG)
+
+## 23, 26 Aug 2024
+
+Not a lot of big updates here. I decided to dig in a bit more to how nametables work and what utilities are out there, as I'm hoping that with the right configuration they'll make editing levels much more efficient in the long run vs. continuing to transcribe the metatiles and edit the hex by hand.
+
+## 31 Aug 2024
+
+I was unable to easily get a tool that would help me edit levels, so I went back to doing them the slow way. I changed how a fireballs looks in Red Planet.
+
+![img](./screens-02/15.PNG)
+
+## 7 Sep 2024
+
+I made some updates to the Cell level. Some blocks I grabbed from MM2, and some palette changes, plus making the falling trap blocks more noticeable.
+
+![img](./screens-02/16.PNG)
+
+Updates to the conveyor belts. I did both later on but this shows the difference; mine is on the left. I added the arrow because it moves so fast it's hard to tell the direction with the new sprites. Hopefully I can make it slower later on.
+
+![img](./screens-02/17.PNG)
+
+My palette changes to the blocks and conveyors have messed with palettes for other scenery, but I don't care for now because I need to redo the background anyway.
+
+## 13 Sep 2024
+
+Changed the look of the spikes in Cell. The downward facing ones are new, upward are old. Might also change their color eventually.
+
+![img](./screens-02/18.PNG)
+
+Also changed these flashing spikes in the elevator ride in Cell:
+
+![img](./screens-02/19.PNG)
+
+## 14 Sep 2024
+
+Simplified spike design in upper part of Cell elevator ride:
+
+![img](./screens-02/20.PNG)
+
+## 20 Sep 2024
+
+Found a .nsf file for the game's audio, then imported it to create Famitracker files for each song in the game. I don't know much about using trackers at all, and not sure if I'll mess much with the audio right now, but I decided to at least dip my toes in.
+
+## 21 Sep 2024
+
+Went back to the Blue Planet and updated the submerged ice blocks, which use a different sprite than the above-surface. Then I thought it looked weird. It's a little weird in the original game too, as you fall through these and die, even though it would appear like you could stand on them. I compromised and took them out entirely; not sure I love it, but there's no perfect choice.
+
+![img](./screens-02/21.PNG) 
+![img](./screens-02/22.PNG)
+
+I continued going through Blue Planet and took out the clouds and moons in Acts 1-5, but didn't really feel like it was interesting enough for screenshots.
