@@ -93,3 +93,27 @@ Went back to the Blue Planet and updated the submerged ice blocks, which use a d
 ![img](./screens-02/22.PNG)
 
 I continued going through Blue Planet and took out the clouds and moons in Acts 1-5, but didn't really feel like it was interesting enough for screenshots.
+
+## 2 Nov 2024
+
+My first day back in a while was a disappointing one, with some lessons (re)learned. I wanted to replace the snake designs with the snake terrain from MM3. I started on that by making the tiles more clearly identifiable by their position and direction:
+
+![img](./screens-02/23.PNG) 
+![img](./screens-02/24.PNG)
+
+This was foolish of me, and I should have already known so, for two reasons. The first was that the tiles don't map 1 to 1 with the tiles from my MM3 source, which is very often likely to be the case, even if the metatiles are the same size (by this I mean that, for example, Bucky might use 4 unique tiles in one section of the snake "body" while MM3 will use 8, etc.).
+
+The thing I should've done from the start is identify the metatiles in Bucky and plan to redefine them so they could fit the mold. But alas, I couldn't find any metatiles for the snake body. I think this is because they are drawn as the snake moves, even though they end up as tiles when they appear. So I am not sure how to redefine the snake body, effectively putting me back where I started for the day's progress.
+
+## 3 Nov 2024
+
+I regrouped and was able to make the snakes work okay with the existing tile makeup. It certainly isn't 1:1 but it lifts a lot from the MM3 look. The heads of the snakes are still unaltered.
+
+![img](./screens-02/25.PNG) 
+![img](./screens-02/26.PNG)
+
+## Conclusion
+
+Sadly, I didn't get any more work in for the rest of the year, but hopefully the time away will re-energize me for the project. This seems like a fitting place to end the log, until next time!
+
+[Next >](./devlog-3.md)

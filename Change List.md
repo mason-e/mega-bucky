@@ -107,8 +107,10 @@ Notes for the following are much rougher for now.
 #### Blue Planet
 - Ice blocks over water
     - MM6 blizzard man
+    - Need to make colors align in dark background areas
 - Robo snakes
-    - MM3 snake man
+    - MM3 Snake Man
+    - Bodies altered, need to do head
 - Ice floes/bergs over water
 - Ice cavern
 - Deep cavern with big pushing pistons
