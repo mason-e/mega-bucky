@@ -2,12 +2,15 @@
 
 There are many guides out there for ROMhacking, but I decided to write this guide as well because I'd often find information to be quite scattered and varying in quality, making it hard to piece together. I think by writing it down it also helps reinforce to myself that I actually understand what I'm doing. I know this won't all apply to every NES game, but I believe it should extend to many games beyond BOH.
 
+NOTE: Some of this info is out of date/not necessary since I switched to using a graphical editor, but I am not going to bother doing with extensive rewrites of what I alraedy started. The underlying principles are still correct, but they're implemented in the editor.
+
 ## Tools Used
 
 - **Mesen**: An emulator for NES (and other systems) that has a lot of debugging tools. I'm sure other emulators have equivalent tools, but probably use different names for them.  
 - **Tile Layer Pro (TLP)**: A simple graphics editor program that can load a game's graphics in tiles organized by their addresses in the CHR ROM.  
 - **Cygnus Hex Editor**: A program that opens ROMs as binary files (an exact sequence of its compiled bytes, in hexadecimal). I'll just use the term "hex editor" in this guide since I didn't find anything particularly remarkable about Cygnus, and there are many hex editors out there.  
 - **TBLater**: Program to create *.tbl files, although these are pretty easily made in any text editor.
+- **BuckyEditor**: A (limited) level editor that I forked from a different editor and customized specifically for my use.
 
 ## Key Terms and Concepts to Know
 
@@ -35,7 +38,7 @@ A metatile is a 4x4 cluster of tiles (totaling 32x32 pixels) that is used to for
 
 ## How to Edit Levels
 
-TODO: For now, this section is limited in scope to replacing tilesets within existing level constraints. Any adding entire new sections of the level, changing fundamental game behaviors, enemy placements, etc. is not covered here.
+For now, this section is limited in scope to replacing tilesets within existing level constraints. Any adding entire new sections of the level, changing fundamental game behaviors, enemy placements, etc. is not covered here.
 
 There are three main ways I'd recommend to edit a level, and aside from how, it's important to know _when_ to use the right method. The methods I will cover are:
 
@@ -47,7 +50,7 @@ There are three main ways I'd recommend to edit a level, and aside from how, it'
 
 The easiest way for me to explain this is through examples. 
 
-Let's say you want to remove all the clouds from the game's sky and make it look clear. When I was first learning, I would do **(2) Change the tile makeup of metatiles** to blank out the ones with clouds, but learned the hard way this is not the best approach. Because the game already had a metatile defined for a blank sky, it was better to instead use that one, aka **(1) Change the tile makeup of metatiles**.
+Let's say you want to remove all the clouds from the game's sky and make it look clear. When I was first learning, I would do **(2) Change the tile makeup of metatiles** to blank out the ones with clouds, but learned the hard way this is not the best approach. Because the game already had a metatile defined for a blank sky, it was better to instead use that one, aka **(1) Change the placement of metatiles**.
 
 If you wanted to _add_ clouds to the game, the approach would be similar, unless the game didn't have clouds already. Then it might be appropriate to **(2) Change the tile makeup of metatiles**, but keep in mind you'll probably need to have another metatile to "sacrifice" to add clouds to one (at least to keep the level size the same in ROM and avoid the complication of expanding it).
 
@@ -98,8 +101,6 @@ This continues on down the ROM as you scroll to the next part of the screen. Als
 ![](./guide/11-Next-screen-addresses.PNG)
 
 As far as I can tell, the order of the bytes in ROM is the order that screens load in the game. So if a section scrolled vertically upwards, the _bottom_ screen would actually come earlier in the ROM than the top screen. But each individual screen worth (the six rows of 8 bytes) still has the top of the screen in the earlier bytes.
-
-TODO: I don't know yet about how parallax screens might behave differently.
 
 ### Change the Tile Makeup of Metatiles
 
@@ -159,7 +160,7 @@ So if you wanted to use a palette pattern such as:
 
 The byte for that address should be set to $03 + $00 + $20 + $40 = $63.
 
-TODO: Explain how to identify _where_ these bytes are. I haven't found a great method yet, I initially discovered them through ROM corruption. One thing I observed is that since they can encompass the full range of a byte, you might see a lot of values like $00, $AA and $FF near each other, which isn't as common for other types of level data.
+As far as I can tell for now, the data for these palette assignments is in the same order as the metatiles themselves, just at a different ROM address. So if we call a metatile "$AA" and the palette assignments being at $89E1, to change the $AA tile we want to change the byte at 8A8B.
 
 ## Editing Font
 

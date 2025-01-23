@@ -1,5 +1,7 @@
 # ROM Breakdown
 
+TODO: Some of this could probably use some updating since moving to the level editor.
+
 This file is for tracking "regions" of the PRG ROM as I determine them. This info can be useful, for example, when searching a specific byte value later on (say I wanted to find the byte for a score) and using the known ranges to eliminate some possibilities (a score value is probably not in level data). My ranges are not exact, as I didn't see a sense in finding the exact address where something starts and ends. Because it's not exact to every byte, it's also possible that other data might be mixed up (for all I know a score value _could_ be in with level data), but it's reasonable to assume based on the findings so far that similar things are generally grouped together.
 
 ## Undetermined Ranges
