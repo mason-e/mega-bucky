@@ -64,6 +64,8 @@ The scope creep, the stuff that goes above and beyond, the things that start to 
 
 ### Level Tile Edit
 
+New revelation: Achieving a proper MM aesthetic requires minimal palette or pattern table changes. In MM they mostly only change for animations and mini bosses. Sometimes there is a change like when a level goes from day to night. But carrying through the same graphics is important. So this is a mix of old and new notes for now.
+
 #### Green Planet
 - Main terrain
     - Make square
@@ -84,6 +86,7 @@ The scope creep, the stuff that goes above and beyond, the things that start to 
 - Boss - nothing really besides terrain, maybe look of giant rock
 
 #### Red Planet
+- Use the Act 1 terrain for all "ground" going forward
 - Lava
     - MM1 Fire Man, MM2 Heat man
     - Look for jumping lava/fireballs anywhere

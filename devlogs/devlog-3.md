@@ -43,3 +43,15 @@ I did a similar thing for the metatile editor, which didn't have image based but
 ## 22 Jan 2025
 
 Initially I thought the level editor was in a good enough state to take a break from working on it and actually _edit_ levels, but I got hit with writer's block pretty fast. I made some minor changes not worth showing yet. I also realized that the editor still could greatly benefit from some features I initiallly thought of as "nice to have". So updates going forward will probably be a mix of actual game work and work on my editor.
+
+## 23 Jan 2025
+
+Got the metatile portion of the editor displaying addresses of the individual tiles. It's a bit low tech, but they're small, so overlaying addresses wouldn't have really worked as well as it does with metatiles.
+
+![](./screens-03/6.PNG)
+
+## 24-25 Jan 2025
+
+Doing some design planning on levels and made an update to the level editor to select configs from a drop down rather than browsing the file directly. Now I can choose a stage and it will populate the available config files for that stage.
+
+![](./screens-03/7.PNG)
