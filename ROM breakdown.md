@@ -29,17 +29,11 @@ EF90 to 10110 (between tiles and scripts)
 ### 3100 to 32A0
 Escape tiles
 
-### 8010 to 89B0
-Green Planet tiles
-
-### 89E0 to 8A70
-Green Planet tile attributes
-
-### 8A80 to 8B00
-Don't know, but it messes up the level bad if corrupted
-
-### 8B10 to 9187
-Green Planet level layout
+### 8011 to 9187: Green Planet
+- 8011 to 89E0: Metatile definitions
+- 89E1 to 8A7D: Attribute table
+- 8A7E to 8B0F: ??? Some kind of level layout that I don't quite understand
+- 8B10 to 9188: Level layout by screen
 
 ### 9188 to 96A0
 Red Planet tiles
